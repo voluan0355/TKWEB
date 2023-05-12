@@ -1,80 +1,72 @@
 body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #f4f4f4;
 }
 
-.heading {
-    background-color:#242525;
-    display: flex;
-    height: 96px;
-    justify-content: space-between;
+
+/* Header **/
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
 }
 
-.heading__list {
-    list-style: none;
-    padding-left: 0;
+header a {
+    color: #CCC;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
     display: flex;
-    order: 2;
+    float: left;
+    padding: 0 6px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
     margin: 0;
+    margin-bottom: 30px;
 }
 
-.heading__list-item {
-    margin: 0 12px;
+header nav {
+    float: right;
+    margin-top: 18px;
+}
+
+header .highlight,
+header .current a {
+    color: #70ff75;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: red;
+    font-weight: 700;
     cursor: pointer;
 }
 
-.heading__item-link {
-    color: #e5e5ff;
-    font-size: 18px;
-    transform: translateY(64px);
-    display: block;
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
 }
 
-.heading-h2 {
-    margin: 0;
-    color: #e5e5ff;
-    order: 1;
-    line-height: 96px;
-}
 
-.name-website {
-    color: #d36969;
-}
 
-.body-email {
-    display: flex;
-}
-
-.body-email input[type="text"] {
-    flex: 1;
-}
-
-.container-content {
-    display: none;
-}
-
-.active {
-    display: block;
-}
-
-.body__container-introduce {
-    display: block;
-}
-
-p {
-    font-size: 18px;
-}
-
-.footer {
-    height: 84px;
-    background-color: yellow;
-    display: flex;
-}
-
-.footer__parag {
-    margin: auto;
-}
-
-.enable {
-    color: yellow
+#newsletter form input[type="email"],
+.quote input,
+.quote textarea {
+    width: 100%;
+    margin-bottom: 10px;
 }
